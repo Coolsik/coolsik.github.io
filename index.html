@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="프로페셔널 포트폴리오와 웹 게임을 소개하는 개인 웹사이트입니다.">
-    <title>Portfolio</title>
+    <meta name="description" content="윤서준의 생성된 가상 프로필과 프로젝트, 지렁이 게임을 소개하는 데모 포트폴리오입니다.">
+    <title>윤서준 | 가상 개발자 포트폴리오</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <script src="game.js" defer></script>
   </head>
-  <body>
+  <body data-persona="fictional">
     <header class="site-header">
       <nav class="nav-shell" aria-label="주요 메뉴">
         <a class="brand" href="#home" aria-label="홈으로 이동">Portfolio</a>
@@ -40,8 +40,9 @@
       <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="content-shell">
           <p class="eyebrow">Professional Portfolio</p>
-          <h1 id="hero-title">더 나은 경험을 만드는 작업을 소개합니다.</h1>
-          <p class="hero-copy">프로필과 프로젝트 내용은 확인 후 순차적으로 업데이트됩니다.</p>
+          <h1 id="hero-title">윤서준 · 백엔드·플랫폼 개발자</h1>
+          <p class="hero-copy">30대 중반 남성, 약 10년 동안 서비스의 기반을 설계해 온 가상 개발자 persona입니다. 복잡한 흐름을 단순하게 만들고 오래 유지되는 시스템을 고민합니다.</p>
+          <p class="fictional-disclaimer" role="note">이 페이지의 인물·경력·프로젝트는 데모를 위해 생성된 허구이며 실제 인물·회사·성과와 무관합니다.</p>
           <a class="primary-link" href="#games">Games 살펴보기</a>
         </div>
       </section>
@@ -49,32 +50,79 @@
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="content-shell card">
           <p class="eyebrow">About</p>
-          <h2 id="about-title">프로필을 준비하고 있습니다.</h2>
-          <p>확인된 경력과 프로젝트만 이곳에 소개할 예정입니다. 소개와 전문 분야는 <strong>[사람 확인 필요]</strong>입니다.</p>
+          <h2 id="about-title">문제를 구조화하고, 팀의 속도를 높입니다.</h2>
+          <div class="persona-summary persona-grid">
+            <p>윤서준은 작은 실험을 빠르게 반복하며 서비스의 신뢰성을 높이는 백엔드·플랫폼 개발자입니다. 기획의 의도를 코드로 번역하고, 팀이 같은 방향을 볼 수 있는 문서와 도구를 남기는 일을 좋아합니다.</p>
+            <p><strong>기술 스택</strong> · JavaScript, Node.js, PostgreSQL, Docker, 관측 가능성 도구</p>
+            <p><strong>작업 가치관</strong> · 작게 배포하고, 숫자로 확인하며, 다음 사람이 이해할 수 있게 기록합니다.</p>
+          </div>
         </div>
       </section>
 
       <section class="section section-accent" id="projects" aria-labelledby="projects-title">
         <div class="content-shell card">
           <p class="eyebrow">Projects</p>
-          <h2 id="projects-title">프로젝트</h2>
-          <p>공개할 프로젝트명, 역할, 성과와 링크는 <strong>[사람 확인 필요]</strong>입니다.</p>
+          <h2 id="projects-title">작게 만들고, 오래 운영한 가상 프로젝트</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-period">2020 · 라이트브릿지랩 (가상)</p>
+              <h3>Pulse Queue</h3>
+              <p><strong>문제</strong> · 알림 지연을 추적하기 어려웠습니다.</p>
+              <p><strong>역할</strong> · 이벤트 큐와 재처리 흐름을 설계했습니다.</p>
+              <p><strong>기술</strong> · Node.js · PostgreSQL · Docker</p>
+              <p class="project-result">생성된 데모 수치 · 재처리 확인 시간을 40% 줄인 시나리오</p>
+              <span class="fictional-tag">허구 프로젝트</span>
+            </article>
+            <article class="project-card">
+              <p class="project-period">2023 · 플로우포지 스튜디오 (가상)</p>
+              <h3>Northstar Console</h3>
+              <p><strong>문제</strong> · 여러 서비스의 상태를 한눈에 보기 어려웠습니다.</p>
+              <p><strong>역할</strong> · 배포 지표와 장애 신호를 묶는 플랫폼을 만들었습니다.</p>
+              <p><strong>기술</strong> · JavaScript · 관측 가능성 도구 · Web API</p>
+              <p class="project-result">생성된 데모 수치 · 점검 준비 시간을 30% 줄인 시나리오</p>
+              <span class="fictional-tag">허구 프로젝트</span>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="section" id="experience" aria-labelledby="experience-title">
         <div class="content-shell card">
           <p class="eyebrow">Experience</p>
-          <h2 id="experience-title">경력</h2>
-          <p>소속, 직무, 기간과 주요 경험은 <strong>[사람 확인 필요]</strong>입니다.</p>
+          <h2 id="experience-title">10년의 성장 곡선</h2>
+          <div class="timeline" aria-label="생성된 가상 경력">
+            <article class="timeline-item">
+              <p class="timeline-period">2016–2021 · 5년</p>
+              <h3>라이트브릿지랩 (가상) · 백엔드 엔지니어</h3>
+              <p>주문·알림 도메인의 API와 배치 파이프라인을 설계하고, 팀의 첫 장애 대응 문서를 만들었습니다.</p>
+              <span class="fictional-tag">생성된 사례</span>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-period">2021–현재 · 약 5년</p>
+              <h3>플로우포지 스튜디오 (가상) · 플랫폼 엔지니어</h3>
+              <p>개발 환경 표준화와 관측 가능성 대시보드를 이끌며 제품 팀이 안전하게 실험하는 기반을 다졌습니다.</p>
+              <span class="fictional-tag">생성된 사례</span>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="section section-accent" id="research" aria-labelledby="research-title">
         <div class="content-shell card">
           <p class="eyebrow">Research</p>
-          <h2 id="research-title">연구</h2>
-          <p>연구 주제, 발표, 논문과 공개 자료는 <strong>[사람 확인 필요]</strong>입니다.</p>
+          <h2 id="research-title">계속 배우는 관심 주제</h2>
+          <div class="research-list">
+            <article class="research-item">
+              <p class="research-label">관심 주제 01</p>
+              <h3>작은 시스템의 관측 가능성</h3>
+              <p>로그·지표·트레이스를 한 흐름으로 읽는 방법을 탐구하고, 팀이 장애를 함께 설명할 수 있는 언어를 정리합니다.</p>
+            </article>
+            <article class="research-item">
+              <p class="research-label">관심 주제 02</p>
+              <h3>안전한 실험을 돕는 개발 도구</h3>
+              <p>반복 가능한 로컬 환경과 점진적 배포 습관을 탐구하며, 개발자가 피드백을 빨리 얻는 과정을 기록합니다.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -128,15 +176,17 @@
       <section class="section section-accent" id="contact" aria-labelledby="contact-title">
         <div class="content-shell card">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">연락하기</h2>
-          <p>공개할 이메일과 소셜 링크는 <strong>[사람 확인 필요]</strong>입니다.</p>
+          <h2 id="contact-title">가볍게 인사를 건네세요.</h2>
+          <p>이 주소는 실제 수신함이 연결되지 않은 데모용 연락처입니다.</p>
+          <p><a class="contact-link" href="mailto:demo.yoonseo@example.com">demo.yoonseo@example.com</a></p>
+          <p class="fictional-tag">실제 연락 수단이 아닌 데모 주소</p>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="content-shell">
-        <p>Portfolio · 콘텐츠 준비 중</p>
+        <p>윤서준 · 생성된 데모 프로필</p>
       </div>
     </footer>
   </body>
