@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="game.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -26,7 +27,11 @@
         <ul class="nav-menu" id="primary-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#research">Research</a></li>
           <li><a href="#games">Games</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -45,18 +50,86 @@
         <div class="content-shell card">
           <p class="eyebrow">About</p>
           <h2 id="about-title">프로필을 준비하고 있습니다.</h2>
-          <p>확인된 경력과 프로젝트만 이곳에 소개할 예정입니다.</p>
+          <p>확인된 경력과 프로젝트만 이곳에 소개할 예정입니다. 소개와 전문 분야는 <strong>[사람 확인 필요]</strong>입니다.</p>
         </div>
       </section>
 
-      <section class="section section-accent" id="games" aria-labelledby="games-title">
-        <div class="content-shell card game-preview">
-          <div>
+      <section class="section section-accent" id="projects" aria-labelledby="projects-title">
+        <div class="content-shell card">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">프로젝트</h2>
+          <p>공개할 프로젝트명, 역할, 성과와 링크는 <strong>[사람 확인 필요]</strong>입니다.</p>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="content-shell card">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">경력</h2>
+          <p>소속, 직무, 기간과 주요 경험은 <strong>[사람 확인 필요]</strong>입니다.</p>
+        </div>
+      </section>
+
+      <section class="section section-accent" id="research" aria-labelledby="research-title">
+        <div class="content-shell card">
+          <p class="eyebrow">Research</p>
+          <h2 id="research-title">연구</h2>
+          <p>연구 주제, 발표, 논문과 공개 자료는 <strong>[사람 확인 필요]</strong>입니다.</p>
+        </div>
+      </section>
+
+      <section class="section game-section" id="games" aria-labelledby="games-title">
+        <div class="content-shell card">
+          <div class="game-heading">
+            <div>
             <p class="eyebrow">Games</p>
-            <h2 id="games-title">지렁이 게임 준비 영역</h2>
-            <p>키보드와 모바일 터치로 즐기는 전체 게임은 아직 구현되지 않았습니다.</p>
+              <h2 id="games-title">지렁이 게임</h2>
+              <p>방향키 또는 WASD로 이동하고, 모바일에서는 화면의 방향 버튼을 사용하세요.</p>
+            </div>
+            <div class="scoreboard" aria-label="게임 점수">
+              <p>점수 <strong id="game-score">0</strong></p>
+              <p>최고 점수 <strong id="game-high-score">0</strong></p>
+            </div>
           </div>
-          <span class="status-badge">Coming soon</span>
+
+          <div class="game-layout">
+            <div class="game-board-shell">
+              <canvas
+                id="game-board"
+                width="400"
+                height="400"
+                tabindex="0"
+                role="img"
+                aria-label="20칸 격자의 지렁이 게임 보드"
+              ></canvas>
+              <p class="game-status" id="game-status" role="status" aria-live="polite">시작 버튼을 눌러 게임을 시작하세요.</p>
+            </div>
+
+            <div class="game-panel">
+              <div class="game-actions" aria-label="게임 동작">
+                <button class="game-button game-button-primary" id="game-start" type="button">시작</button>
+                <button class="game-button" id="game-pause" type="button" disabled>일시정지</button>
+                <button class="game-button" id="game-restart" type="button">재시작</button>
+              </div>
+
+              <div class="direction-pad" aria-label="모바일 방향 조작">
+                <button class="direction-button direction-up" type="button" data-direction="up" aria-label="위로 이동">↑</button>
+                <button class="direction-button direction-left" type="button" data-direction="left" aria-label="왼쪽으로 이동">←</button>
+                <button class="direction-button direction-down" type="button" data-direction="down" aria-label="아래로 이동">↓</button>
+                <button class="direction-button direction-right" type="button" data-direction="right" aria-label="오른쪽으로 이동">→</button>
+              </div>
+
+              <p class="game-help">Space 키로 일시정지하거나 다시 시작할 수 있습니다. 벽이나 몸에 닿으면 게임 오버입니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-accent" id="contact" aria-labelledby="contact-title">
+        <div class="content-shell card">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">연락하기</h2>
+          <p>공개할 이메일과 소셜 링크는 <strong>[사람 확인 필요]</strong>입니다.</p>
         </div>
       </section>
     </main>
